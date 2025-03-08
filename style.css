@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: rgb(101, 183, 197);
+    /* background-color: rgb(101, 183, 197); */
+    background-color: black;
     color: white;
     padding-top: 4em;
     overflow-x: hidden;
@@ -134,7 +135,7 @@ body {
     width: 14.5em;
     height: 24.5em;
     border-radius: 1em;
-    background-image: url(http://as1.ftcdn.net/jpg/02/43/12/34/1000_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.webp);
+    background-image: url(imgs/me.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -436,8 +437,18 @@ body {
   width: 1.8em;
   height:auto;
   filter: invert(1);
-  transition: filter 0.3s ease-in-out;
+  transition: scale 0.2s ease-in-out;
 }
 .ic1:hover{
-  filter: invert(0.15);
+  scale: 110%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.work{
+  display: none;
+  width: 100vw;
+  height: 90vh;
+  border: 2px solid white;
 }

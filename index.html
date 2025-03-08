@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="navbar">
+<body >
+    <div class="navbar" >
         <div class="head">
             Portfolio
         </div>
         <div class="nav">
             <ul class="navlist">
-                <li>Home</li>
-                <li>About</li>
+                <li id="home1">Home</li>
+                <li id="about1">About</li>
                 <!-- <li>Skills</li> -->
-                <li>Projects</li>
-                <li>Contact</li>
+                <li id="project1">Projects</li>
+                <li id="contact1">Contact</li>
             </ul>
         </div>
     </div>
@@ -33,7 +33,7 @@
                     Sophomore @Vellore Institute of Technology
                     <div>
                         <button class="button-54">Contact Me</button>
-                        <button class="button-54">View Work</button>
+                        <button class="button-54" onclick="viewWork()">View Work</button>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
             </div>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about2">
         <div class="aboutbox">
             <div class="abouthead">
                 About Me
@@ -68,7 +68,7 @@
             <div class="aboutpara">
                 <ul class="skilllist">
                     <li><img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000">Python</li>
-                    <li><img src="https://img.icons8.com/?size=100&id=55199&format=png&color=000000">C & C++</li>
+                    <li><img src="https://img.icons8.com/?size=100&id=55199&format=png&color=000000" style="filter: invert(1);">C & C++</li>
                     <li><img src="https://img.icons8.com/?size=100&id=7I3BjCqe9rjG&format=png&color=000000">Flutter App
                         Development</li>
                     <li><img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000">Hypertext Markup
@@ -76,7 +76,7 @@
                     <li><img src="https://img.icons8.com/?size=100&id=3BTBsJs5myRy&format=png&color=000000">Cascading
                         Style Sheets</li>
                     <li><img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000">JavaScript</li>
-                    <li><img src="https://img.icons8.com/?size=100&id=2572&format=png&color=000000">Java</li>
+                    <li><img src="https://img.icons8.com/?size=100&id=2572&format=png&color=000000 "style="filter: invert(1);">Java</li>
                     <li><img src="https://img.icons8.com/?size=100&id=r5Y16PcDkoWI&format=png&color=000000">Matlab</li>
 
                 </ul>
@@ -99,7 +99,7 @@
             </div>
         </div>
     </div>
-    <div class="projects">
+    <div class="projects" id="project2">
         <div class="projectsbox">
             <div class="projecthead">
                 Projects
@@ -169,7 +169,7 @@
             </div>
         </div>
     </div>
-    <div class="contacts">
+    <div class="contacts" id="contact2">
         <div class="contactsbox">
             <div class="contacts1">
                 <p class="head1">Contact Me</p>
@@ -194,6 +194,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="work">
+
     </div>
     <script src="script.js"></script>
 </body>

@@ -45,31 +45,48 @@ function viewMore() {
     }
 }
 function submit() {
-    let flag=true;
-    if(document.getElementById("name").value==""){
-        document.getElementById("name").style.border="0.1em solid rgb(230, 6, 6)";
-        flag=false;
+    let flag = true;
+    if (document.getElementById("name").value == "") {
+        document.getElementById("name").style.border = "0.1em solid rgb(230, 6, 6)";
+        flag = false;
     }
-    if(document.getElementById("email").value==""){
-        document.getElementById("email").style.border="0.1em solid rgb(230, 6, 6)";
-        flag=false;
-    }else{
-        if(document.getElementById("email").value.includes("@")==false){
-            document.getElementById("email").style.border="0.1em solid rgb(230, 6, 6)";
-           flag=false;
-        }
+    if (document.getElementById("email").value == "") {
+        document.getElementById("email").style.border = "0.1em solid rgb(230, 6, 6)";
+        flag = false;
     }
-    if(document.getElementById("msg").value==""){
-        document.getElementById("msg").style.border="0.1em solid rgb(230, 6, 6)";
-        flag=false;
+    if (document.getElementById("msg").value == "") {
+        document.getElementById("msg").style.border = "0.1em solid rgb(230, 6, 6)";
+        flag = false;
     }
-    if(flag==true){
-    document.getElementById("name").value="";
-    document.getElementById("email").value="";
-    document.getElementById("msg").value="";
-    document.getElementById("name").style.border="0.1em solid rgb(255, 255, 255)";
-    document.getElementById("email").style.border="0.1em solid rgb(255, 255, 255)";
-    document.getElementById("msg").style.border="0.1em solid rgb(255, 255, 255)";
+    if (flag == true) {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("msg").value = "";
+        document.getElementById("name").style.border = "0.1em solid rgb(255, 255, 255)";
+        document.getElementById("email").style.border = "0.1em solid rgb(255, 255, 255)";
+        document.getElementById("msg").style.border = "0.1em solid rgb(255, 255, 255)";
+
     }
+
+}
+document.getElementById("home1").addEventListener("click", function () {
+    document.getElementById("home2").scrollIntoView({ behavior: "smooth" });
+});//id home2 not defined as of now
+document.getElementById("about1").addEventListener("click", function () {
+    document.getElementById("about2").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("project1").addEventListener("click", function () {
+    document.getElementById("project2").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("contact1").addEventListener("click", function () {
+    document.getElementById("contact2").scrollIntoView({ behavior: "smooth" });
+});
+function viewWork(){
+    document.querySelector(".navlist").style.display="none";
+    document.querySelector(".introcont").style.display="none";
+    document.querySelector(".about").style.display="none";
+    document.querySelector(".projects").style.display="none";
+    document.querySelector(".contacts").style.display="none";
+    document.querySelector(".work").style.display="block";
 
 }

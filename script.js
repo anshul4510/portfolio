@@ -82,11 +82,12 @@ document.getElementById("contact1").addEventListener("click", function () {
     document.getElementById("contact2").scrollIntoView({ behavior: "smooth" });
 });
 function viewWork(){
-    document.querySelector(".navlist").style.display="none";
-    document.querySelector(".introcont").style.display="none";
-    document.querySelector(".about").style.display="none";
-    document.querySelector(".projects").style.display="none";
-    document.querySelector(".contacts").style.display="none";
-    document.querySelector(".work").style.display="block";
+    // document.querySelector(".navlist").style.display="none";
+    // document.querySelector(".introcont").style.display="none";
+    // document.querySelector(".about").style.display="none";
+    // document.querySelector(".projects").style.display="none";
+    // document.querySelector(".contacts").style.display="none";
+    // document.querySelector(".work").style.display="block";
+    window.open("work.html");
 
 }

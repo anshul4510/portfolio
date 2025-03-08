@@ -7,7 +7,9 @@
 
 body {
     /* background-color: rgb(101, 183, 197); */
-    background-color: black;
+    /* background-color: black; */
+    background-color: #a8a8a1;
+    
     color: white;
     padding-top: 4em;
     overflow-x: hidden;

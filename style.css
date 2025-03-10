@@ -7,12 +7,14 @@
 
 body {
     /* background-color: rgb(101, 183, 197); */
-    /* background-color: black; */
-    background-color: #a8a8a1;
-    
+    background-color: black;
+    /* background-color: #a8a8a1; */
+    /* cursor: url('https://img.icons8.com/material-rounded/24/blue-pointer.png') 10 10, auto; */
+    cursor: url('https://img.icons8.com/external-those-icons-fill-those-icons/24/737373/external-arrow-selection-cursors-those-icons-fill-those-icons.png') 44 44, auto;
     color: white;
     padding-top: 4em;
     overflow-x: hidden;
+    transition: background-color 0.5s ease-in-out;
     font-family: 'Poppins';
 }
 
@@ -32,6 +34,15 @@ body {
     z-index: 1000;
     padding: 0 2em;
 }
+.theme{
+  width: 4.8vw;
+  height: 11vh;
+  filter: invert(1);
+  transition: scale 0.3s ease-out;
+}
+.theme:hover{
+  scale: 1.15;
+}
 
 .head {
     /* border: 2px solid black; */
@@ -50,7 +61,7 @@ body {
     align-items: center;
 }
 
-.navlist {
+.navlist,.worklist{
     list-style: none;
     display: flex;
     gap: 2em;
@@ -61,13 +72,12 @@ body {
     cursor: pointer;
 }
 
-.navlist li:hover {
+.navlist li:hover, .worklist li:hover {
     text-decoration: underline rgb(59, 149, 165);
     text-underline-offset: 6px;
     text-decoration-thickness: 3px;
     font-weight: 600;
 }
-
 .introcont {
     /* border: 2px solid black; */
     height: 35em;
@@ -147,6 +157,7 @@ body {
     font-size:0.4em;
 }
 .button-54 {
+  background-color: black;
     margin-top: 2em;
     font-family: "Open Sans", sans-serif;
     height:3em;
@@ -155,7 +166,7 @@ body {
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
+    color: white;
     cursor: pointer;
     border: 3px solid;
     padding: 0.25em 0.5em;
@@ -204,7 +215,7 @@ body {
   .head1,.abouthead{
     font-weight:600;
     font-size: 2em;
-    text-shadow: 2px 2px 0px black;
+    /* text-shadow: 2px 2px 0px black; */
     text-decoration: underline rgb(59, 149, 165);
     text-underline-offset: 6px;
     text-decoration-thickness: 3px;
@@ -265,7 +276,7 @@ body {
 .projecthead {
     font-weight: 600;
     font-size: 2em;
-    text-shadow: 2px 2px 0px black;
+    /* text-shadow: 2px 2px 0px black; */
     text-decoration: underline rgb(59, 149, 165);
     text-underline-offset: 6px;
     text-decoration-thickness: 3px;
@@ -423,6 +434,9 @@ body {
 .smbutton{
   width: 11vw;
   height: 6vh;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  /* background-color: rgb(48, 241, 48); */
 }
 .info{
   margin-top: 4.1em;
@@ -452,5 +466,82 @@ body {
   display: none;
   width: 100vw;
   height: 90vh;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
+.quotebox{
+  padding-top: 2%;
+  /* border: 2px solid white; */
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: center;
+  align-items: center; */
+}
+.quotecont{
+  /* position: relative; */
+  /* border: 2px solid white; */
+  height: 70vh;
+  width: 55vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.quote{
+  font-size: 3em;
+  font-weight: 600;
+}
+.quote span{
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: chocolate;
+}
+.quoteimg{
+  /* border: 2px solid white; */
+  width: 35vw;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+}
+.quoteimg img{
+  height: 70vh;
+  filter: invert(1);
+  /* animation: bulbblink 2s forwards ease-in-out; */
+  animation: bulbblink1 2s forwards ease-in-out;
+}
+#qimg1{
+  animation: bulbblink1 2s forwards ease-in-out;
+}
+@keyframes bulbblink1 {
+  from{
+
+  }
+  to{
+  filter: invert(1) sepia(1) saturate(10) hue-rotate(0deg) brightness(0.8);
+  rotate: -20deg;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+  }
+  .navlist {
+    display: none;
+  }
+
+  .intro {
+      max-width: 90%;
+  }
+
+  .aboutbox, .projectsbox, .contactsbox {
+      width: 100%;
+  }
+
+  .inp1 {
+      width: 90%;
+  }
+} */

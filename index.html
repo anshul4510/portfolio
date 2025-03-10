@@ -15,11 +15,14 @@
         </div>
         <div class="nav">
             <ul class="navlist">
-                <li id="home1">Home</li>
-                <li id="about1">About</li>
-                <!-- <li>Skills</li> -->
-                <li id="project1">Projects</li>
-                <li id="contact1">Contact</li>
+                <li id="about1" class="hidework">About</li>
+                <li id="project1"class="hidework">Projects</li>
+                <li id="contact1"class="hidework">Contact</li>
+                <li id="themechange" onclick="changetheme()"><img src="imgs/bulb.png" alt="theme_change" id="tch" class="theme dark"></li>
+            </ul>
+            <ul class="worklist" style="display: none;">
+                <li id="home1" onclick="home()" >Home</li>
+                <li id="themechange1" onclick="changetheme1()"><img src="imgs/bulb.png" alt="theme_change" id="tch1" class="theme dark"></li>
             </ul>
         </div>
     </div>
@@ -174,11 +177,11 @@
             <div class="contacts1">
                 <p class="head1">Contact Me</p>
                 <p class="label">Name</p>
-                <input type="email" id="name">
+                <input type="email" id="name" class="inp1">
                 <p class="label email1">Email</p>
-                <input type="text" id="email">
+                <input type="text" id="email" class="inp1">
                 <p class="label">Message</p>
-                <textarea id="msg"></textarea>
+                <textarea id="msg" class="inp1"></textarea>
                 <button class="button-54 b54 smbutton" onclick="submit()">Send Message</button>
             </div>
             <div class="contacts2">
@@ -196,8 +199,15 @@
         </div>
     </div>
     <div class="work">
-
+        <div class="quotebox">
+        <div class="quotecont">
+            <p class="quote">"The only way to do great work is to love what you do." <br> <span>- Steve Jobs</span></p>
+        </div>
+        <div class="quoteimg">
+            <img src="imgs/creativity.png" alt="" id="qimg1">
+        </div>
     </div>
+</div>  
     <script src="script.js"></script>
 </body>
 

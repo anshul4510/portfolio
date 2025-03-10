@@ -65,7 +65,18 @@ function submit() {
         document.getElementById("name").style.border = "0.1em solid rgb(255, 255, 255)";
         document.getElementById("email").style.border = "0.1em solid rgb(255, 255, 255)";
         document.getElementById("msg").style.border = "0.1em solid rgb(255, 255, 255)";
-
+        document.querySelector(".smbutton").style.backgroundColor="rgb(29, 100, 29)";
+        document.querySelector(".smbutton").textContent="MESSAGE SENT!!";
+        document.querySelector(".smbutton").style.color="white";
+        document.querySelector(".smbutton").style.width="13vw";
+        document.querySelector(".smbutton").style.fontWeight="600";
+        setTimeout(function() {
+            document.querySelector(".smbutton").style.backgroundColor="white";
+        document.querySelector(".smbutton").textContent="SEND MESSAGE";
+        document.querySelector(".smbutton").style.color="black";
+        document.querySelector(".smbutton").style.width="11vw";
+        document.querySelector(".smbutton").style.fontWeight="400";
+        }, 3000);
     }
 
 }
@@ -81,13 +92,75 @@ document.getElementById("project1").addEventListener("click", function () {
 document.getElementById("contact1").addEventListener("click", function () {
     document.getElementById("contact2").scrollIntoView({ behavior: "smooth" });
 });
-function viewWork(){
-    // document.querySelector(".navlist").style.display="none";
-    // document.querySelector(".introcont").style.display="none";
-    // document.querySelector(".about").style.display="none";
-    // document.querySelector(".projects").style.display="none";
-    // document.querySelector(".contacts").style.display="none";
-    // document.querySelector(".work").style.display="block";
-    window.open("work.html");
+function changetheme(){
+    if (document.getElementById("tch").className=="theme dark"){
+    document.body.style.backgroundColor="rgb(224, 218, 218)";
+    document.getElementById("tch").className="theme bright";
+    document.body.style.color="black";
+    document.querySelector(".theme").style.filter="invert(0)";
+    let icons= document.querySelectorAll(".icons");
+    icons.forEach(icon=>{
+        icon.style.filter="invert(0)";
+    });
+    let inp1=document.querySelectorAll(".inp1");
+    inp1.forEach(inp => {
+        inp.style.border="0.1em solid black";
+    });
+    let buttons=document.querySelectorAll(".button-54");
+    buttons.forEach(button => {
+        button.style.color="black";
+        button.style.backgroundColor="white ";
+    });
+    document.getElementById("qimg1").style.filter="invert(0)";
 
+    }
+    else{
+        document.body.style.color="white";
+    document.body.style.backgroundColor="black";
+    document.getElementById("tch").className="theme dark";
+    let buttons=document.querySelectorAll(".button-54");
+    document.querySelector(".theme").style.filter="invert(1)";
+    let inp1=document.querySelectorAll(".inp1");
+    inp1.forEach(inp => {
+        inp.style.border="0.1em solid white";
+    });
+    let icons= document.querySelectorAll(".icons");
+    icons.forEach(icon=>{
+        icon.style.filter="invert(1)";
+    });
+    buttons.forEach(button => {
+        button.style.color="white";
+        button.style.backgroundColor="black";
+    });
+    document.getElementById("qimg1").style.filter="invert(1)";
+
+    }
 }
+function viewWork() {
+    document.querySelector(".navlist").style.display="none";
+    document.querySelector(".introcont").style.display = "none";
+    document.querySelector(".about").style.display = "none";
+    document.querySelector(".projects").style.display = "none";
+    document.querySelector(".contacts").style.display = "none";
+    document.querySelector(".work").style.display = "block";
+    document.querySelector(".worklist").style.display="flex";
+    document.querySelector(".navbar").style.gap="51em";
+}
+function home(){
+    document.querySelector(".navlist").style.display="flex";
+    document.querySelector(".introcont").style.display = "flex";
+    document.querySelector(".about").style.display = "flex";
+    document.querySelector(".projects").style.display = "flex";
+    document.querySelector(".contacts").style.display = "flex";
+    document.querySelector(".work").style.display = "none";
+    document.querySelector(".worklist").style.display="none";
+    document.querySelector(".navbar").style.gap="39em";
+}
+// document.querySelector(".navlist").style.display="none";
+//     document.querySelector(".introcont").style.display="none";
+//     document.querySelector(".about").style.display="none";
+//     document.querySelector(".projects").style.display="none";
+//     document.querySelector(".contacts").style.display="none";
+//     document.querySelector(".work").style.display="block";
+//     document.querySelector(".worklist").style.display="flex";
+//     document.querySelector(".navbar").style.gap="50em";

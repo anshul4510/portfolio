@@ -194,7 +194,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-  .aboutbox,.projectsbox,.contactsbox{
+  .aboutbox,.projectsbox,.contactsbox,.workexpbox{
     height: 50vh;
     width: 40vw;
     /* border: 2px solid red; */
@@ -545,3 +545,51 @@ body {
       width: 90%;
   }
 } */
+
+.workexp{
+  /* border: 2px solid white; */
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.workexphead{
+  font-weight: 600;
+    font-size: 2em;
+    /* text-shadow: 2px 2px 0px black; */
+    text-decoration: underline rgb(59, 149, 165);
+    text-underline-offset: 6px;
+    text-decoration-thickness: 3px;
+    margin-bottom: 0.5%;
+}
+.workexpbox{
+  width: 70%;
+  height: auto;
+}
+.workexpcont{
+  /* border: 2px solid white; */
+  margin-top: 1%;
+  height: auto;
+  padding: 1%;
+  margin-left: 3%;
+  margin-right: 4%;
+}
+.workmain{
+  margin-bottom:1.5%;
+}
+.worktitle{
+  display: flex;
+  justify-content: space-between;
+}
+.worktitle{
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.workdescp{
+  font-size: 0.9em;
+}
+.workdur{
+  font-weight: 400;
+  font-size: 1rem;
+}

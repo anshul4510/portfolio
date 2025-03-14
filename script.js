@@ -30,7 +30,7 @@ function graduation() {
 }
 function viewMore() {
     if (document.querySelector(".viewmoreb54").innerHTML == "View More Projects") {
-        document.querySelector(".projectsbox").style.height = "240vh";
+        document.querySelector(".projectsbox").style.height = "auto";
         document.getElementById("projectmore").style.display = "block";
         document.getElementById("projectmore").style.display = "flex";
         document.getElementById("projectmore1").style.display = "block";
@@ -80,9 +80,6 @@ function submit() {
     }
 
 }
-document.getElementById("home1").addEventListener("click", function () {
-    document.getElementById("home2").scrollIntoView({ behavior: "smooth" });
-});//id home2 not defined as of now
 document.getElementById("about1").addEventListener("click", function () {
     document.getElementById("about2").scrollIntoView({ behavior: "smooth" });
 });
@@ -144,7 +141,7 @@ function viewWork() {
     document.querySelector(".contacts").style.display = "none";
     document.querySelector(".work").style.display = "block";
     document.querySelector(".worklist").style.display="flex";
-    document.querySelector(".navbar").style.gap="51em";
+    document.querySelector(".navbar").style.gap="56em";
 }
 function home(){
     document.querySelector(".navlist").style.display="flex";
@@ -156,11 +153,34 @@ function home(){
     document.querySelector(".worklist").style.display="none";
     document.querySelector(".navbar").style.gap="39em";
 }
-// document.querySelector(".navlist").style.display="none";
-//     document.querySelector(".introcont").style.display="none";
-//     document.querySelector(".about").style.display="none";
-//     document.querySelector(".projects").style.display="none";
-//     document.querySelector(".contacts").style.display="none";
-//     document.querySelector(".work").style.display="block";
-//     document.querySelector(".worklist").style.display="flex";
-//     document.querySelector(".navbar").style.gap="50em";
+let worktitle=['Core Committee Member','Junior Core Committee Member','Yantra Central Hackathon, VIT Vellore','Gravitas Tech Fest Volunteer (VIT- Vellore)']
+let workdescp=['Centre for Social Entrepreneurship and Development','AdMark Club VIT','Attended VIT\’s Flagship 48-hour hackathon with over 600 participantsSKILLS','Centre for Social Entrepreneurship and Development']
+let workdur=['Apr 2024 - Present','Apr 2024 - Present','Feb 2025','Aug 2024']
+let worklength=worktitle.length;
+for(let i=0;i<worklength;i++){
+    let maindiv=document.createElement("div");
+    maindiv.setAttribute("class","workmain")
+    document.querySelector(".workexpcont").append(maindiv);
+    let titlediv=document.createElement("div");
+    titlediv.setAttribute("class","worktitle");
+    titlediv.innerHTML=worktitle[i];
+    maindiv.append(titlediv);
+    let descpdiv=document.createElement("div");
+    descpdiv.setAttribute("class","workdescp");
+    descpdiv.innerHTML=workdescp[i];
+    maindiv.append(descpdiv);
+    let durdiv=document.createElement("div");
+    durdiv.setAttribute("class","workdur");
+    durdiv.innerHTML=workdur[i];
+    titlediv.append(durdiv);   
+
+}
+
+document.querySelector(".navlist").style.display="none";
+    document.querySelector(".introcont").style.display="none";
+    document.querySelector(".about").style.display="none";
+    document.querySelector(".projects").style.display="none";
+    document.querySelector(".contacts").style.display="none";
+    document.querySelector(".work").style.display="block";
+    document.querySelector(".worklist").style.display="flex";
+    document.querySelector(".navbar").style.gap="56em";

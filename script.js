@@ -176,11 +176,11 @@ for(let i=0;i<worklength;i++){
 
 }
 
-document.querySelector(".navlist").style.display="none";
-    document.querySelector(".introcont").style.display="none";
-    document.querySelector(".about").style.display="none";
-    document.querySelector(".projects").style.display="none";
-    document.querySelector(".contacts").style.display="none";
-    document.querySelector(".work").style.display="block";
-    document.querySelector(".worklist").style.display="flex";
-    document.querySelector(".navbar").style.gap="56em";
+// document.querySelector(".navlist").style.display="none";
+//     document.querySelector(".introcont").style.display="none";
+//     document.querySelector(".about").style.display="none";
+//     document.querySelector(".projects").style.display="none";
+//     document.querySelector(".contacts").style.display="none";
+//     document.querySelector(".work").style.display="block";
+//     document.querySelector(".worklist").style.display="flex";
+//     document.querySelector(".navbar").style.gap="56em";

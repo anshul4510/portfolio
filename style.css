@@ -471,7 +471,7 @@ body {
 .quotebox{
   padding-top: 2%;
   /* border: 2px solid white; */
-  width: 100vw;
+  width: 99.5vw;
   height: 80vh;
   display: flex;
   justify-content: space-around;
@@ -522,30 +522,6 @@ body {
   }
 }
 
-/* @media screen and (max-width: 768px) {
-  .navbar {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 10px;
-  }
-  .navlist {
-    display: none;
-  }
-
-  .intro {
-      max-width: 90%;
-  }
-
-  .aboutbox, .projectsbox, .contactsbox {
-      width: 100%;
-  }
-
-  .inp1 {
-      width: 90%;
-  }
-} */
-
 .workexp{
   /* border: 2px solid white; */
   width: 100vw;
@@ -592,4 +568,247 @@ body {
 .workdur{
   font-weight: 400;
   font-size: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .navbar{
+    width: 100%;
+    gap: 45vw;
+  }
+  .hidework{
+    display: none;
+  }
+  .theme{
+    width: auto;
+    height: 80px;
+  }
+  .button-54{
+    width: auto;
+  }
+  .aboutbox{
+    height: auto;
+  }
+  #skills,#certification,#graduation{
+    width: auto;
+    height: 390px;
+  }
+  .projecthead{
+    margin-bottom: 20px;
+  }
+  .projectsbox{
+    height: auto;
+    padding: 20px;
+  }
+  .projectdivs{
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .projectlist{
+    width: 500px;
+    height: 490px;
+  }
+  .contactsbox{
+    width: 500px;
+    height: 700px;
+  }
+  .smbutton{
+    width: auto;
+    height: auto;
+  }
+  .inp1{
+    height: auto;
+    width: auto;
+  }
+    /* .quotebox{
+      width: 100vw;
+    }
+  .quoteimg{
+    width: 200px;
+    height: auto;
+  } */
+}
+@media screen and (max-width: 480px) {
+  .navbar {
+    width: 100%;
+    gap: 10vw;
+    padding: 0 1em;
+  }
+  .head {
+    font-size: 1.5em;
+  }
+  .theme {
+    width: auto;
+    height: 54px;
+  }
+  .introcont {
+    height: auto;
+    padding: 1em;
+  }
+  .intro {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    padding: 1em;
+  }
+  .name {
+    width: 100%;
+    font-size: 1.8em;
+    padding: 0.5em;
+  }
+  .photo {
+    width: 100%;
+    height: 18em;
+    margin-top: 1em;
+  }
+  .photo1 {
+    width: 100%;
+    height: 100%;
+  }
+  .introSkills {
+    font-size: 0.5em;
+  }
+  .button-54 {
+    width: 100%;
+    margin-top: 1em;
+    font-size: 14px;
+  }
+  .aboutbox {
+    width: 90%;
+    height: auto;
+    padding: 1em;
+    margin: 0 1em;
+
+  }
+  .about{
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  .abouthead {
+    font-size: 1.5em;
+  }
+  .aboutpara {
+    font-size: 0.9em;
+  }
+  .b54 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+  }
+  #skills, #certification, #graduation {
+    width: 90%;
+    height: auto;
+    padding: 1em;
+    margin: 0 1em;
+  }
+  .skilllist li {
+    font-size: 0.9em;
+  }
+  .projectsbox {
+    width: 90%;
+    height: auto;
+    padding: 1em;
+    margin: 0 1em;
+  }
+  .projecthead {
+    font-size: 1.5em;
+  }
+  .projectdivs {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .projectlist {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+  }
+  .projectimg {
+    height: 15em;
+  }
+  .projecttitle {
+    font-size: 1.2em;
+  }
+  .projectdescp {
+    font-size: 0.9em;
+  }
+  .viewproject {
+    font-size: 0.9em;
+  }
+  .contactsbox {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    padding: 1em;
+    margin: 0 1em;
+  }
+  .contacts1, .contacts2 {
+    width: 100%;
+  }
+  #name, #email, #msg {
+    width: 90%;
+    height: 2.5em;
+    margin: 0.5em 0;
+    font-size: 0.9em;
+  }
+  #msg {
+    height: 8em;
+  }
+  .smbutton {
+    width: auto;
+    height: auto;
+    font-size: 0.9em;
+  }
+  .perinfo {
+    font-size: 0.9em;
+  }
+  .quotebox {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    margin: 0 1em;
+  }
+  .quotecont {
+    width: 100%;
+    height: auto;
+  }
+  .quote {
+    font-size: 1.8em;
+  }
+  .quote span {
+    font-size: 1.3em;
+  }
+  .quoteimg {
+    width: 70%;
+    height: auto;
+  }
+  .quoteimg img {
+    height: auto;
+  }
+  /* .workexp{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .workexpbox{
+    width: auto;
+  } */
+   .workexpbox{
+    width: 80%;
+    outline: 2px solid red;
+   }
+  .worklist {
+    display: flex;
+  }
+  .worklist li {
+    display: block;
+    font-size: 0.9em;
+  }
+  .viewmore img {
+    width: 24px;
+    height: 24px;
+  }
 }

@@ -68,13 +68,13 @@ function submit() {
         document.querySelector(".smbutton").style.backgroundColor="rgb(29, 100, 29)";
         document.querySelector(".smbutton").textContent="MESSAGE SENT!!";
         document.querySelector(".smbutton").style.color="white";
-        document.querySelector(".smbutton").style.width="13vw";
+        document.querySelector(".smbutton").style.width="auto";
         document.querySelector(".smbutton").style.fontWeight="600";
         setTimeout(function() {
             document.querySelector(".smbutton").style.backgroundColor="white";
         document.querySelector(".smbutton").textContent="SEND MESSAGE";
         document.querySelector(".smbutton").style.color="black";
-        document.querySelector(".smbutton").style.width="11vw";
+        document.querySelector(".smbutton").style.width="auto";
         document.querySelector(".smbutton").style.fontWeight="400";
         }, 3000);
     }
@@ -176,11 +176,11 @@ for(let i=0;i<worklength;i++){
 
 }
 
-// document.querySelector(".navlist").style.display="none";
-//     document.querySelector(".introcont").style.display="none";
-//     document.querySelector(".about").style.display="none";
-//     document.querySelector(".projects").style.display="none";
-//     document.querySelector(".contacts").style.display="none";
-//     document.querySelector(".work").style.display="block";
-//     document.querySelector(".worklist").style.display="flex";
-//     document.querySelector(".navbar").style.gap="56em";
+document.querySelector(".navlist").style.display="none";
+    document.querySelector(".introcont").style.display="none";
+    document.querySelector(".about").style.display="none";
+    document.querySelector(".projects").style.display="none";
+    document.querySelector(".contacts").style.display="none";
+    document.querySelector(".work").style.display="block";
+    document.querySelector(".worklist").style.display="flex";
+    document.querySelector(".navbar").style.gap="56em";

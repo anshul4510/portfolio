@@ -38,7 +38,7 @@ function viewMore() {
         document.querySelector(".viewmoreb54").innerHTML = "View Less Projects"
     }
     else {
-        document.querySelector(".projectsbox").style.height = "93vh";
+        document.querySelector(".projectsbox").style.height = "auto";
         document.getElementById("projectmore").style.display = "none";
         document.getElementById("projectmore1").style.display = "none";
         document.querySelector(".viewmoreb54").innerHTML = "View More Projects"
@@ -102,6 +102,7 @@ function changetheme(){
     let inp1=document.querySelectorAll(".inp1");
     inp1.forEach(inp => {
         inp.style.border="0.1em solid black";
+        inp.style.color="black";
     });
     let buttons=document.querySelectorAll(".button-54");
     buttons.forEach(button => {
@@ -109,7 +110,6 @@ function changetheme(){
         button.style.backgroundColor="white ";
     });
     document.getElementById("qimg1").style.filter="invert(0)";
-
     }
     else{
         document.body.style.color="white";
@@ -120,6 +120,7 @@ function changetheme(){
     let inp1=document.querySelectorAll(".inp1");
     inp1.forEach(inp => {
         inp.style.border="0.1em solid white";
+        inp.style.color="white";
     });
     let icons= document.querySelectorAll(".icons");
     icons.forEach(icon=>{
@@ -141,7 +142,7 @@ function viewWork() {
     document.querySelector(".contacts").style.display = "none";
     document.querySelector(".work").style.display = "block";
     document.querySelector(".worklist").style.display="flex";
-    document.querySelector(".navbar").style.gap="56em";
+    document.querySelector(".navbar").style.gap="65vw";
 }
 function home(){
     document.querySelector(".navlist").style.display="flex";
@@ -176,11 +177,11 @@ for(let i=0;i<worklength;i++){
 
 }
 
-document.querySelector(".navlist").style.display="none";
-    document.querySelector(".introcont").style.display="none";
-    document.querySelector(".about").style.display="none";
-    document.querySelector(".projects").style.display="none";
-    document.querySelector(".contacts").style.display="none";
-    document.querySelector(".work").style.display="block";
-    document.querySelector(".worklist").style.display="flex";
-    document.querySelector(".navbar").style.gap="56em";
+// document.querySelector(".navlist").style.display="none";
+//     document.querySelector(".introcont").style.display="none";
+//     document.querySelector(".about").style.display="none";
+//     document.querySelector(".projects").style.display="none";
+//     document.querySelector(".contacts").style.display="none";
+//     document.querySelector(".work").style.display="block";
+//     document.querySelector(".worklist").style.display="flex";
+//     document.querySelector(".navbar").style.gap="56em";

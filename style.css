@@ -13,7 +13,7 @@ body {
     cursor: url('https://img.icons8.com/external-those-icons-fill-those-icons/24/737373/external-arrow-selection-cursors-those-icons-fill-those-icons.png') 44 44, auto;
     color: white;
     padding-top: 4em;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     transition: background-color 0.5s ease-in-out;
     font-family: 'Poppins';
 }
@@ -22,7 +22,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 97vw;
+    width: 100vw;
     height: 4em;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(40px);
@@ -33,7 +33,7 @@ body {
     justify-content: space-between;
     /* gap: 45%; */
     z-index: 1000;
-    padding: 0 2em;
+    /* padding: 0 2em; */
 }
 .theme{
   width: 4vw;
@@ -248,6 +248,10 @@ body {
   .skilllist{
     margin-top: 8%;
     list-style: none;
+  }
+  .aboutlist,.certilist {
+    margin-top: 8%;
+    margin-left: 2%;
   }
   .skilllist img{
     width: 10%;
@@ -466,52 +470,91 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
-.work{
+.work {
   display: none;
   width: 100vw;
-  height: 90vh;
-  /* border: 2px solid white; */
+  min-height: 90vh;
+  padding: 2em 0;
+  box-sizing: border-box;
 }
-.quotebox{
-  padding-top: 2%;
-  /* border: 2px solid white; */
-  width: 99.5vw;
-  height: 80vh;
+.quotebox {
+  width: 100%;
+  min-height: 80vh;
   display: flex;
-  justify-content: space-around;
-  /* justify-content: center;
-  align-items: center; */
-}
-.quotecont{
-  /* position: relative; */
-  /* border: 2px solid white; */
-  height: 70vh;
-  width: 55vw;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-.quote{
-  font-size: 3em;
-  font-weight: 600;
-}
-.quote span{
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: chocolate;
-}
-.quoteimg{
-  /* border: 2px solid white; */
-  width: 35vw;
-  height: 70vh;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 1em;
+  box-sizing: border-box;
 }
-.quoteimg img{
-  height: 70vh;
-  filter: invert(1);
-  /* animation: bulbblink 2s forwards ease-in-out; */
-  animation: bulbblink1 2s forwards ease-in-out;
+.quotecont {
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.quote {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.quote span {
+  font-size: 1.5rem;
+  color: chocolate;
+}
+.quoteimg {
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+.quoteimg img {
+  width: 100%;
+  height: auto;
+  max-height: 550px;
+  object-fit: contain;
+}
+.workexp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+}
+.workexpbox {
+  width: 90%;
+  max-width: 800px;
+  padding: 2em;
+  margin: 1em 0;
+}
+.workexphead {
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+.workexpcont {
+  width: 100%;
+}
+.workmain {
+  width: 97%;
+  margin-bottom: 2em;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5em;
+  box-sizing: border-box;
+}
+.worktitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.workdur {
+  font-weight: 400;
+  color: #aaa;
+}
+.workdescp {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 #qimg1{
   animation: bulbblink1 2s forwards ease-in-out;
@@ -526,54 +569,7 @@ body {
   }
 }
 
-.workexp{
-  /* border: 2px solid white; */
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.workexphead{
-  font-weight: 600;
-    font-size: 2em;
-    /* text-shadow: 2px 2px 0px black; */
-    text-decoration: underline rgb(59, 149, 165);
-    text-underline-offset: 6px;
-    text-decoration-thickness: 3px;
-    margin-bottom: 0.5%;
-}
-.workexpbox{
-  width: 70%;
-  height: auto;
-  margin-bottom: 20px;
-}
-.workexpcont{
-  /* border: 2px solid white; */
-  margin-top: 1%;
-  height: auto;
-  padding: 1%;
-  margin-left: 3%;
-  margin-right: 4%;
-}
-.workmain{
-  margin-bottom:1.5%;
-}
-.worktitle{
-  display: flex;
-  justify-content: space-between;
-}
-.worktitle{
-  font-weight: 600;
-  font-size: 1.5em;
-}
-.workdescp{
-  font-size: 0.9em;
-}
-.workdur{
-  font-weight: 400;
-  font-size: 1rem;
-}
+
 @media screen and (max-width: 1024px) {
   .navbar{
     width: 100%;
@@ -803,7 +799,6 @@ body {
   } */
    .workexpbox{
     width: 80%;
-    outline: 2px solid red;
    }
   .worklist {
     display: flex;
@@ -820,8 +815,8 @@ body {
 @media screen and (max-width: 768px) {
   .navbar {
     width: 100%;
-    gap: 40vw;
-    padding: 0 1em;
+    /* gap: 40vw; */
+    padding-left: 1em;
   }
   .head {
     font-size: 1.7em;
@@ -841,6 +836,7 @@ body {
     padding: 1em;
   }
   .name {
+    height: auto;
     width: 100%;
     font-size: 2em;
     padding: 0.5em;
@@ -992,3 +988,5 @@ body {
     height: 28px;
   }
 }
+
+

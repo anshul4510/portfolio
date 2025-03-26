@@ -89,6 +89,12 @@ document.getElementById("project1").addEventListener("click", function () {
 document.getElementById("contact1").addEventListener("click", function () {
     document.getElementById("contact2").scrollIntoView({ behavior: "smooth" });
 });
+document.getElementById("contact3").addEventListener("click", function () {
+    document.getElementById("contact2").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("work1").addEventListener("click", function () {
+    document.getElementById("work2").scrollIntoView({ behavior: "smooth" });
+});
 function changetheme(){
     if (document.getElementById("tch").className=="theme dark"){
     document.body.style.backgroundColor="rgb(224, 218, 218)";
@@ -97,6 +103,10 @@ function changetheme(){
     document.querySelector(".theme").style.filter="invert(0)";
     let icons= document.querySelectorAll(".icons");
     icons.forEach(icon=>{
+        icon.style.filter="invert(0)";
+    });
+    let icons1= document.querySelectorAll(".icons1");
+    icons1.forEach(icon=>{
         icon.style.filter="invert(0)";
     });
     let inp1=document.querySelectorAll(".inp1");
@@ -110,6 +120,11 @@ function changetheme(){
         button.style.backgroundColor="white ";
     });
     document.getElementById("qimg1").style.filter="invert(0)";
+    let workdur=document.querySelectorAll(".workdur");
+    workdur.forEach(dur=>{
+        dur.style.color="black"
+    })
+    
     }
     else{
         document.body.style.color="white";
@@ -126,11 +141,19 @@ function changetheme(){
     icons.forEach(icon=>{
         icon.style.filter="invert(1)";
     });
+    let icons1= document.querySelectorAll(".icons1");
+    icons1.forEach(icon=>{
+        icon.style.filter="invert(1)";
+    });
     buttons.forEach(button => {
         button.style.color="white";
         button.style.backgroundColor="black";
     });
     document.getElementById("qimg1").style.filter="invert(1)";
+    let workdur=document.querySelectorAll(".workdur");
+    workdur.forEach(dur=>{
+        dur.style.color="#aaa"
+    })
 
     }
 }
@@ -142,7 +165,8 @@ function viewWork() {
     document.querySelector(".contacts").style.display = "none";
     document.querySelector(".work").style.display = "block";
     document.querySelector(".worklist").style.display="flex";
-    document.querySelector(".navbar").style.gap="65vw";
+    // document.querySelector(".navbar").style.gap="62vw";
+    document.querySelector(".navbar").style.justifyContent="space-around";
 }
 function home(){
     document.querySelector(".navlist").style.display="flex";
@@ -152,7 +176,7 @@ function home(){
     document.querySelector(".contacts").style.display = "flex";
     document.querySelector(".work").style.display = "none";
     document.querySelector(".worklist").style.display="none";
-    document.querySelector(".navbar").style.gap="39em";
+    document.querySelector(".navbar").style.justifyContent="space-between";
 }
 let worktitle=['Core Committee Member','Junior Core Committee Member','Yantra Central Hackathon, VIT Vellore','Gravitas Tech Fest Volunteer (VIT- Vellore)']
 let workdescp=['Centre for Social Entrepreneurship and Development','AdMark Club VIT','Attended VIT\’s Flagship 48-hour hackathon with over 600 participantsSKILLS','Centre for Social Entrepreneurship and Development']
